@@ -168,6 +168,10 @@ a:active {
   color: var(--hyperlink-alternate-color);
 }
 
+.custom-navigation{
+  color: black;
+}
+
 .custom-navigation:hover {
   background: url(heading-background.svg);
   background-size: 15%;
