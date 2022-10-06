@@ -250,6 +250,7 @@ p {
 .logo {
   width: 3rem;
   background-image: url(JasonL-projectthumbnail-svgs/star.svg);
+  border: 2px solid pink;
 }
 
 .hero-headline-wrapper {
