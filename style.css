@@ -52,17 +52,11 @@ html {
 :root {
   --primary-text-color: #222;
   --accent-color: #555;
-  --hyperlink-color: yellow;
+  --hyperlink-color: black;
   --hyperlink-alternate-color: orangered;
   --hover-color: hotpink;
   --body-typeface: "Atkinson Hyperlegible", sans-serif;
-  --heading-typeface: 'Dongle', sans-serif;
-  --off-white: #f8f8ff;
-  --isabelline: #f4f0ec;
-  --baby-powder: #fefefa;
-  --alice-blue: #f0f8ff;
-  --alabaster: #f2f0e6;
-  --floral-white: #fffaf0;
+  --heading-typeface: 'Dongle';
   --background-color: #f5f5f5;
   --alt-background-color: black;
   --text-selection-background-color: #555;
@@ -78,7 +72,6 @@ html {
 body {
   font-family: var(--body-typeface);
   color: var(--primary-text-color);
-  background: #e4f57c;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -122,7 +115,7 @@ h2 {
   font-size: 2.25rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
-  color: white /*var(--accent-color)*/;
+  color: black /*var(--accent-color)*/;
 }
 
 h3 {
@@ -256,6 +249,7 @@ p {
 
 .logo {
   width: 3rem;
+  background-image: url(JasonL-projectthumbnail-svgs/star.svg);
 }
 
 .hero-headline-wrapper {
@@ -321,7 +315,6 @@ p {
   grid-template-columns: 1fr;
   grid-gap: 3rem;
   min-height: 100vh;
-  background: #285680;
   padding: 1rem 1rem;
   color: black;
 }
@@ -330,28 +323,24 @@ p {
 .about-item-1 {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  color: white;
 }
 
 .footer-item-2,
 .about-item-2 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  color: white;
 }
 
 .footer-item-3,
 .about-item-3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
-  color: white;
 }
 
 .footer-item-4,
 .about-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
-  color: white;
 }
 
 /* Project Page
@@ -447,21 +436,21 @@ p {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   body {
-    background: #e4f57c /*var(--color-darkest)*/;
+
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
-    background: #e4f57c /*var(--color-dark)*/;
+
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
-    background: #e4f57c /*var(--color-normal)*/;
+
   }
 
   h1 {
@@ -583,13 +572,13 @@ p {
   /* X-Large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
     body {
-      background: #e4f57c /*var(--color-light)*/;
+
     }
   }
 
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
     body {
-      background: #e4f57c/*var(--color-lightest)*/;
+
     }
   }
