@@ -555,29 +555,20 @@ p {
     opacity: 1;
   }
 
-
-
-
-
-
   /* Grayscale filter with full-colour on hover and tap */
   .work-page-grid-item a img {
 
     background-color: var(--overlay-color);
-    /* filter: grayscale(100); */
     /*clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 150 200 z');
     max-width: 1fr;
     max-height: 1fr%;
     object-fit: contain;*/
   }
 
-
-
   .work-page-grid-item>a:hover img,
   .work-page-grid-item>a:active img {
 
       opacity: 0.9;
-    /* filter: grayscale(0); */
     /*clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 150 200 z');*/
   }
 
