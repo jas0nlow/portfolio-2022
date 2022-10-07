@@ -170,7 +170,7 @@ a:active {
 }
 .alternate-links:hover, .alternate-links:active {
   color: var(--hyperlink-alternate-color);
-  
+
 }
 .custom-navigation {
   color: black;
@@ -273,7 +273,7 @@ p {
   width: 35rem;
   height: 10rem;
 
-  background-image: url(JasonL-projectthumbnail-svgs/star-2.svg);
+  background-image: url(svgs/star-2.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
   background-size: 70%;
@@ -501,7 +501,7 @@ p {
     align-items: flex-start;
     width: 35rem;
     height: 10rem;;
-    background-image: url(JasonL-projectthumbnail-svgs/star-2.svg);
+    background-image: url(svgs/star-2.svg);
     background-repeat: no-repeat;
     background-position: 50% 120%;
     background-size: 40%;
@@ -555,7 +555,7 @@ p {
     opacity: 1;
   }
 
- 
+
 
 
 
