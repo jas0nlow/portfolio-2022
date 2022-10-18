@@ -297,15 +297,15 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
+  width: 15rem;
   height: 7rem;
   background-image: url(svgs/star-2.svg);
   background-repeat: no-repeat;
-  background-position: 50% 300%;
-  background-size: 200%;
-
-
+  background-position: 50% 70%;
+  background-size: 120%;
 }
+
+.logo-link {width: 7rem; border: 2px solid black;}
 
 .hero-headline-wrapper {
   display: flex;
