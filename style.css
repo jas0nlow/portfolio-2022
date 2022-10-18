@@ -285,10 +285,14 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 0 1rem 1rem;
+  padding: 0rem 1rem 0rem 1rem;
   align-items: center;
 }
-.menu-item {width: 2rem; background: lightblue;}
+
+.menu-item {
+  background: lightblue;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -436,23 +440,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
  ██████  ███    ███ ███████ ██████   █████
@@ -544,35 +531,50 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 1em;
   }
 
   .work-page-grid-item {
     width: 100%;
     height: auto;
     position: relative; /* Required to contain overlay size */
+    margin: 1rem;
+  }
+
+  .clipped .solid {
+    background-color: var(--color-5);
+  }
+  .clipped:hover .solid {
+    opacity: 0.8;
+  }
+
+  .svg-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .clipped {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+  }
+
+  .overlay-wrapper-1 {
     background: url(schollar/schollarheader.jpg);
     clip-path: url(#thickhourglass);
   }
 
-  /* Solid Colour Overlay */
-  .solid {
-    background-color: var(--color-1);
-    opacity: 100%;
-  }
-
-  .work-page-grid-item:hover .solid {
-    opacity: 0;
-  }
-
-  .work-page-grid-item a img {
+  /* .work-page-grid-item a img {
     background-color: var(--overlay-color);
   }
 
   .work-page-grid-item>a:hover img,
   .work-page-grid-item>a:active img {
     opacity: 0.9;
-  }
+  } */
 
 
   .global-footer,
