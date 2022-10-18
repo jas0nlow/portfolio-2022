@@ -274,6 +274,8 @@ p {
 */
 
 .hero {
+  width: 100%;
+  background: hotpink;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -286,18 +288,19 @@ p {
   padding: 0 0 1rem 1rem;
   align-items: center;
 }
-
+.menu-item {width: 2rem; background: lightblue;}
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4rem;
+  width: 10rem;
   height: 7rem;
-
   background-image: url(svgs/star-2.svg);
   background-repeat: no-repeat;
   background-position: 50% 300%;
   background-size: 200%;
+
+
 }
 
 .hero-headline-wrapper {
@@ -501,7 +504,7 @@ p {
     justify-content: center;
     align-items: flex-start;
     width: 35rem;
-    height: 10rem;;
+    height: 10rem;
     background-image: url(svgs/star-2.svg);
     background-repeat: no-repeat;
     background-position: 50% 120%;
