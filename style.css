@@ -624,12 +624,17 @@ p {
 
   .project-aside {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 5rem;
   }
 
+  .project-info {
 
+  }
+  .project-navigation {
+
+  }
   /* Main Project Image Area on Large Devices */
   .project-details {
 
