@@ -275,7 +275,6 @@ p {
 
 .hero {
   width: 100%;
-  background: hotpink;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
@@ -290,22 +289,25 @@ p {
 }
 
 .menu-item {
-  background: lightblue;
+
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
-  height: 7rem;
+  width: 10rem;
+  height: 6rem;
   background-image: url(svgs/star-2.svg);
   background-repeat: no-repeat;
-  background-position: 50% 70%;
-  background-size: 120%;
+  background-position: 50% 90%;
+  background-size: 100%;
 }
 
-.logo-link {width: 7rem; border: 2px solid black;}
+.logo-link {
+  width: 4rem;
+  padding-bottom: 20%;
+}
 
 .hero-headline-wrapper {
   display: flex;
