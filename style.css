@@ -98,6 +98,7 @@ img {
   /* This is optional. Also try cover or leave out entirely. */
 
 }
+
 svg {
   max-width: 100%;
 }
@@ -126,6 +127,14 @@ h2 {
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--primary-text-color);
+}
+
+.project-name-preview {
+  font-size: 2.5rem;
+  font-family: var(--heading-typeface);
+  margin-bottom: 1rem;
+  color: var(--primary-text-color);
+  line-height: 1.2;
 }
 
 h3 {
@@ -171,10 +180,13 @@ a:active {
   color: var(--hyperlink-color);
 
 }
-.alternate-links:hover, .alternate-links:active {
+
+.alternate-links:hover,
+.alternate-links:active {
   color: var(--hyperlink-alternate-color);
 
 }
+
 .custom-navigation {
   color: black;
 }
@@ -198,27 +210,35 @@ p {
 .color-1 {
   color: var(--color-1);
 }
+
 .color-2 {
   color: var(--color-2);
 }
+
 .color-3 {
   color: var(--color-3);
 }
+
 .color-4 {
   color: var(--color-4);
 }
+
 .color-5 {
   color: var(--color-5);
 }
+
 .color-6 {
   color: var(--color-6);
 }
+
 .color-7 {
   color: var(--color-7);
 }
+
 .color-8 {
   color: var(--color-8);
 }
+
 .color-9 {
   color: var(--color-9);
 }
@@ -288,9 +308,7 @@ p {
   align-items: center;
 }
 
-.menu-item {
-
-}
+.menu-item {}
 
 .logo {
   display: flex;
@@ -319,9 +337,7 @@ p {
   text-align: center;
 }
 
-.hero-headline {
-
-}
+.hero-headline {}
 
 .hero-icon {
   font-size: 4rem;
@@ -455,23 +471,17 @@ p {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body {
-
-  }
+  body {}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-
-  }
+  body {}
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-
-  }
+  body {}
 
   h1 {
     font-size: 4rem;
@@ -536,15 +546,22 @@ p {
   }
 
   .work-page-grid-item {
+    margin: 1rem;
+  }
+
+  .project-preview-wrapper {
     width: 100%;
     height: auto;
-    position: relative; /* Required to contain overlay size */
-    margin: 1rem;
+    position: relative;
+    /* Required to contain overlay size */
+
+
   }
 
   .clipped .solid {
     background-color: var(--color-5);
   }
+
   .clipped:hover .solid {
     opacity: 0.8;
   }
@@ -558,9 +575,10 @@ p {
     width: 100%;
     height: 100%;
   }
+
   .clipped {
     width: 100%;
-    height: 400px;
+    height: 600px;
     background-size: cover;
   }
 
@@ -604,7 +622,7 @@ p {
     grid-column: 3 / 4;
   }
 
-  .social-item{
+  .social-item {
     padding: .5rem;
   }
 
@@ -627,18 +645,19 @@ p {
     flex-flow: row wrap;
     justify-content: space-between;
     margin-bottom: 5rem;
+    background: var(--color-2);
   }
 
-  .project-info {
+  .project-info {width: 80%; border: 1px solid black; background: var(--color-3);}
 
-  }
-  .project-navigation {
+  .project-navigation {width: 20%;
+  border: 1px solid black; background: var(--color-4);
+  display: flex;
+  justify-content: flex-end;
+}
 
-  }
   /* Main Project Image Area on Large Devices */
-  .project-details {
-
-  }
+  .project-details {}
 
 
   .project-image {
@@ -650,14 +669,10 @@ p {
 
   /* X-Large devices (large desktops, 1200px and up)*/
   @media (min-width: 1200px) {
-    body {
-
-    }
+    body {}
   }
 
   /* XX-Large devices (larger desktops, 1400px and up) */
   @media (min-width: 1400px) {
-    body {
-
-    }
+    body {}
   }
