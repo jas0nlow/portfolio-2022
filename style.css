@@ -658,27 +658,27 @@ p {
   }
 
   .overlay-wrapper-1 {
-    background: url(schollar/schollar-thumbnail.jpg);
+    background: url(thumbnails/schollar-thumbnail.jpg);
     clip-path: url(#thickhourglass);
   }
 
   .overlay-wrapper-2 {
-    background: url(halevitamins/halegummiespackaging.jpg);
+    background: url(thumbnails/hale-packaging-thumbnail.jpg);
     clip-path: url(#pacmanghost);
   }
 
   .overlay-wrapper-3 {
-    background: url(amiriaandena/amirira-and-ena-illustration-thumbnail.jpg);
+    background: url(thumbnails/amirira-and-ena-illustration-thumbnail.jpg);
     clip-path: url(#upsidedownnarch);
   }
 
   .overlay-wrapper-4 {
-    background: url(nearme/nearme-thumbnail.png);
+    background: url(thumbnails/nearme-thumbnail.png);
     clip-path: url(#arrowshape);
   }
 
   .overlay-wrapper-5 {
-    background: url(zippi.png);
+    background: url(thumbnails/zippi-thumbnail.jpg);
     clip-path: url(#leftscallopedsquare);
   }
 
