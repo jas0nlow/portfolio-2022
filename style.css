@@ -401,6 +401,11 @@ p {
   grid-row: 3 / 4;
 }
 
+.social-item {
+  padding: 1rem;
+  display: inline;
+}
+
 .footer-item-4,
 .about-item-4 {
   grid-column: 1 / 2;
@@ -648,7 +653,8 @@ p {
   }
 
   .social-item {
-    padding: .5rem;
+    padding: 1rem;
+    display: inline;
   }
 
   .footer-item-4,
