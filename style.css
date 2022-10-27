@@ -563,11 +563,51 @@ p {
 
   }
 
-  .clipped .solid {
+  .clipped-1 .solid {
     background-color: var(--color-5);
   }
 
-  .clipped:hover .solid {
+  .clipped-1:hover .solid {
+    opacity: 0.8;
+  }
+
+  .clipped-2 .solid {
+    background-color: var(--base-color);
+  }
+
+  .clipped-2:hover .solid {
+    opacity: 0.8;
+  }
+
+  .clipped-3 .solid {
+    background-color: var(--color-3);
+  }
+
+  .clipped-3:hover .solid {
+    opacity: 0.8;
+  }
+
+  .clipped-4 .solid {
+    background-color: var(--color-2);
+  }
+
+  .clipped-4:hover .solid {
+    opacity: 0.8;
+  }
+
+  .clipped-5 .solid {
+    background-color: var(--color-6);
+  }
+
+  .clipped-5:hover .solid {
+    opacity: 0.8;
+  }
+
+  .clipped-6 .solid {
+    background-color: var(--hover-color);
+  }
+
+  .clipped-6:hover .solid {
     opacity: 0.8;
   }
 
@@ -581,7 +621,37 @@ p {
     height: 100%;
   }
 
-  .clipped {
+  .clipped-1 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .clipped-2 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .clipped-3 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .clipped-4 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .clipped-5 {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .clipped-6 {
     width: 100%;
     height: 600px;
     background-size: cover;
