@@ -445,6 +445,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: .5rem;
 }
 
 .about-image {
@@ -683,7 +684,7 @@ p {
   }
 
   .overlay-wrapper-6 {
-    background: url(zippi.png);
+    background: url(thumbnails/zippi-thumbnail.jpg);
     clip-path: url(#roundedsquare);
   }
 
@@ -758,11 +759,13 @@ p {
 }
 
   /* Main Project Image Area on Large Devices */
-  .project-details {}
+  .project-details {
+  }
 
 
   .project-image {
     min-height: 100vh;
+    padding: .5rem;
   }
 
 
