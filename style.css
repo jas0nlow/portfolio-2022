@@ -742,7 +742,7 @@ p {
 
   .about {
     padding: 4rem 4rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     min-height: 70vh;
   }
 
