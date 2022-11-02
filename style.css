@@ -369,13 +369,6 @@ p {
   font-size: 4rem;
 }
 
-.hero-footer-navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem;
-}
-
 /* This part isn't required */
 
 .projects {
