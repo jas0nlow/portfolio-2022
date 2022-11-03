@@ -300,16 +300,137 @@ p {
   grid-gap: .25rem;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
-
-
-
-
-/* Optional – Sizing the work page images */
-/* figure {
-  max-height: 250px;
-  overflow: hidden;
+.project-preview-wrapper {
+  width: 100%;
+  /* height: auto; */
+  aspect-ratio: 1 / 1;
   position: relative;
-} */
+  background: greenyellow;
+  /* Required to contain overlay size */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.75s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.clipped-1 .solid {
+  background-color: var(--color-5);
+}
+
+.clipped-1:hover .solid {
+  opacity: 0.8;
+}
+
+.clipped-2 .solid {
+  background-color: var(--base-color);
+}
+
+.clipped-2:hover .solid {
+  opacity: 0.8;
+}
+
+.clipped-3 .solid {
+  background-color: var(--color-3);
+}
+
+.clipped-3:hover .solid {
+  opacity: 0.8;
+}
+
+.clipped-4 .solid {
+  background-color: var(--color-2);
+}
+
+.clipped-4:hover .solid {
+  opacity: 0.8;
+}
+
+.clipped-5 .solid {
+  background-color: var(--color-6);
+}
+
+.clipped-5:hover .solid {
+  opacity: 0.8;
+}
+
+.clipped-6 .solid {
+  background-color: var(--hover-color);
+}
+
+.clipped-6:hover .solid {
+  opacity: 0.8;
+}
+
+.svg-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clipped-1,
+.clipped-2 ,
+.clipped-3 ,
+.clipped-4 ,
+.clipped-5 ,
+.clipped-6 {
+  width: 100%;
+  /* height: 600px; */
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+}
+
+.overlay-wrapper-1 {
+  background: url(thumbnails/schollar-thumbnail.jpg);
+  background-repeat: no-repeat;
+  clip-path: url(#thickhourglass);
+}
+
+.overlay-wrapper-2 {
+  background: url(thumbnails/hale-packaging-thumbnail.jpg);
+  background-repeat: no-repeat;
+  clip-path: url(#pacmanghost);
+}
+
+.overlay-wrapper-3 {
+  background: url(thumbnails/amirira-and-ena-illustration-thumbnail.jpg);
+  background-repeat: no-repeat;
+  clip-path: url(#upsidedownnarch);
+}
+
+.overlay-wrapper-4 {
+  background: url(thumbnails/nearme-thumbnail.png);
+  background-repeat: no-repeat;
+  clip-path: url(#arrowshape);
+}
+
+.overlay-wrapper-5 {
+  background: url(thumbnails/zippi-thumbnail.jpg);
+  background-repeat: no-repeat;
+  clip-path: url(#leftscallopedsquare);
+}
+
+.overlay-wrapper-6 {
+  background: url(thumbnails/zippi-thumbnail.jpg);
+  background-repeat: no-repeat;
+  clip-path: url(#roundedsquare);
+}
+
 
 /* Holding Page Styles */
 
@@ -605,165 +726,15 @@ p {
   } */
 
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: 0.75s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+
 
   .work-page-grid-item {
     margin: 1rem;
   }
 
-  .project-preview-wrapper {
-    width: 100%;
-    height: auto;
-    position: relative;
-    background: greenyellow;
-    /* Required to contain overlay size */
+ 
 
 
-  }
-
-  .clipped-1 .solid {
-    background-color: var(--color-5);
-  }
-
-  .clipped-1:hover .solid {
-    opacity: 0.8;
-  }
-
-  .clipped-2 .solid {
-    background-color: var(--base-color);
-  }
-
-  .clipped-2:hover .solid {
-    opacity: 0.8;
-  }
-
-  .clipped-3 .solid {
-    background-color: var(--color-3);
-  }
-
-  .clipped-3:hover .solid {
-    opacity: 0.8;
-  }
-
-  .clipped-4 .solid {
-    background-color: var(--color-2);
-  }
-
-  .clipped-4:hover .solid {
-    opacity: 0.8;
-  }
-
-  .clipped-5 .solid {
-    background-color: var(--color-6);
-  }
-
-  .clipped-5:hover .solid {
-    opacity: 0.8;
-  }
-
-  .clipped-6 .solid {
-    background-color: var(--hover-color);
-  }
-
-  .clipped-6:hover .solid {
-    opacity: 0.8;
-  }
-
-  .svg-shape {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .clipped-1 {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-  }
-
-  .clipped-2 {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-  }
-
-  .clipped-3 {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-  }
-
-  .clipped-4 {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-  }
-
-  .clipped-5 {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-  }
-
-  .clipped-6 {
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-  }
-
-  .overlay-wrapper-1 {
-    background: url(thumbnails/schollar-thumbnail.jpg);
-    background-repeat: no-repeat;
-    clip-path: url(#thickhourglass);
-  }
-
-  .overlay-wrapper-2 {
-    background: url(thumbnails/hale-packaging-thumbnail.jpg);
-    background-repeat: no-repeat;
-    clip-path: url(#pacmanghost);
-  }
-
-  .overlay-wrapper-3 {
-    background: url(thumbnails/amirira-and-ena-illustration-thumbnail.jpg);
-    background-repeat: no-repeat;
-    clip-path: url(#upsidedownnarch);
-  }
-
-  .overlay-wrapper-4 {
-    background: url(thumbnails/nearme-thumbnail.png);
-    background-repeat: no-repeat;
-    clip-path: url(#arrowshape);
-  }
-
-  .overlay-wrapper-5 {
-    background: url(thumbnails/zippi-thumbnail.jpg);
-    background-repeat: no-repeat;
-    clip-path: url(#leftscallopedsquare);
-  }
-
-  .overlay-wrapper-6 {
-    background: url(thumbnails/zippi-thumbnail.jpg);
-    background-repeat: no-repeat;
-    clip-path: url(#roundedsquare);
-  }
 
   /* .work-page-grid-item a img {
     background-color: var(--overlay-color);
