@@ -399,14 +399,14 @@ p {
 }
 
 .overlay-wrapper-5 {
-  background: url(thumbnails/zippi-thumbnail.jpg);
+  background: url(thumbnails/avant-garbage-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   clip-path: url(#leftscallopedsquare);
 }
 
 .overlay-wrapper-6 {
-  background: url(thumbnails/zippi-thumbnail.jpg);
+  background: url(thumbnails/himo-web-design-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   clip-path: url(#roundedsquare);
@@ -713,7 +713,7 @@ p {
     margin: 1rem;
   }
 
- 
+
 
 
 
@@ -746,7 +746,7 @@ p {
   }
 
   .about-item-2 {
-    grid-column: 2 / 3;  
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
     background: green;
 
