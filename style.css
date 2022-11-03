@@ -373,6 +373,7 @@ p {
 .overlay-wrapper-1 {
   background: url(thumbnails/schollar-thumbnail.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   clip-path: url(#thickhourglass);
 }
 
@@ -386,24 +387,28 @@ p {
 .overlay-wrapper-3 {
   background: url(thumbnails/amirira-and-ena-illustration-thumbnail.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   clip-path: url(#upsidedownnarch);
 }
 
 .overlay-wrapper-4 {
   background: url(thumbnails/nearme-thumbnail.png);
   background-repeat: no-repeat;
+  background-position: center center;
   clip-path: url(#arrowshape);
 }
 
 .overlay-wrapper-5 {
   background: url(thumbnails/zippi-thumbnail.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   clip-path: url(#leftscallopedsquare);
 }
 
 .overlay-wrapper-6 {
   background: url(thumbnails/zippi-thumbnail.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   clip-path: url(#roundedsquare);
 }
 
