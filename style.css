@@ -768,7 +768,7 @@ a:active {
   }
 
   .about {
-    padding: 0 4rem 0 4rem;
+    padding: 0 4rem 4rem 4rem;
     grid-template-columns: 1fr 1fr;
     min-height: 70vh;
   }
