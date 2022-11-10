@@ -32,7 +32,7 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("up.png"), auto !important;
+  cursor: url("pencil-cursor.png"), auto !important;
 }
 
 *,
@@ -335,13 +335,13 @@ a:active {
   background-color: var(--color-3);
 }
 .clipped-4 .solid {
-  background-color: var(--color-2);
+  background-color: var(--hover-color);
 }
 .clipped-5 .solid {
   background-color: var(--color-6);
 }
 .clipped-6 .solid {
-  background-color: var(--hover-color);
+  background-color: var(--color-2);
 }
 .clipped-1:hover .solid, .clipped-2:hover .solid, .clipped-3:hover .solid, .clipped-4:hover .solid, .clipped-5:hover .solid, .clipped-6:hover .solid  {
   opacity: 0.9;
