@@ -63,7 +63,7 @@ html {
   --background-color: #f5f5f5;
   --alt-background-color: black;
   --text-selection-background-color: #555;
-  --base-color: #e4f57c;
+  --base-color: #E4F57C;
   --color-1: #FF0B71;
   --color-2: #6197D7;
   --color-3: #BDE9D6;
@@ -356,6 +356,12 @@ a:active {
   height: 100%;
 }
 
+.project-name-preview {
+  max-width: 13ch;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 .clipped-1,
 .clipped-2 ,
 .clipped-3 ,
@@ -372,6 +378,7 @@ a:active {
   background: url(thumbnails/schollar-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   clip-path: url(#thickhourglass);
 }
 
@@ -379,6 +386,7 @@ a:active {
   background: url(thumbnails/hale-packaging-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   clip-path: url(#pacmanghost);
 }
 
@@ -386,6 +394,7 @@ a:active {
   background: url(thumbnails/amirira-and-ena-illustration-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   clip-path: url(#upsidedownnarch);
 }
 
@@ -393,6 +402,7 @@ a:active {
   background: url(thumbnails/nearme-thumbnail.png);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   clip-path: url(#arrowshape);
 }
 
@@ -400,6 +410,7 @@ a:active {
   background: url(thumbnails/avant-garbage-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   clip-path: url(#leftscallopedsquare);
 }
 
@@ -407,6 +418,7 @@ a:active {
   background: url(thumbnails/himo-web-design-thumbnail.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   clip-path: url(#roundedsquare);
 }
 
@@ -533,6 +545,13 @@ a:active {
 
 }
 
+.about-gif {
+  display: grid;
+  place-items: center;
+  margin:auto;
+  width: 30%;
+}
+
 .recognitions-list {
   padding-top: 8rem;
 }
@@ -551,8 +570,6 @@ a:active {
 
 .about-image {
   width: 100%;
-  background: var(--color-6);
-  padding: 1rem;
 }
 
 .footer-item-1{
@@ -564,25 +581,27 @@ a:active {
 .footer-item-2 {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
-  background: var(--color-2);
 }
 
 .footer-item-3 {
-  grid-column: 1 / 2; 
+  grid-column: 1 / 2;
   grid-row: 2 / 3;
-
   text-align: center;
   align-self: end;
 }
 
 .footer-image {
-  width: 50%;
   display: grid;
   place-items: center;
+  margin:auto;
+  width: 10rem;
 }
 
 .socials-list {
-
+  display: grid;
+  place-content: center;
+  grid-gap: 2rem;
+  grid-auto-flow: column;
 }
 
 .social-item {
@@ -590,7 +609,7 @@ a:active {
   display: inline;
 }
 
-.fa-brands, .fa-regular {font-size: 2.125rem;}
+.fa-brands, .fa-regular {font-size: 4rem;}
 
 
 
@@ -685,6 +704,10 @@ a:active {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {}
+
+    .project-name-preview {
+        font-size: 1.8rem;
+      }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -746,8 +769,9 @@ a:active {
     margin: 1rem;
   }
 
-
-
+  .project-name-preview {
+    font-size: 2.7rem;
+  }
 
 
   /* .work-page-grid-item a img {
@@ -776,17 +800,15 @@ a:active {
   .about-item-1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    border: 5px solid hotpink;
   }
 
   .about-item-2 {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    border: 5px solid lightblue;
   }
 
   .about-description {
-    width: 90%
+    width: 100%;
   }
 
   .footer-item-1 {
@@ -806,18 +828,14 @@ a:active {
     align-self: end;
   }
 
-  /* .footer-item-4 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
-    text-align: center;
-    align-self: end;
-  } */
+  .socials-list {
+    place-content: start space-evenly;
+  }
 
   .social-item {
     padding: 1rem;
     display: inline;
   }
-
 
   .fa-brands, .fa-regular {font-size: 5rem;}
 
@@ -840,10 +858,14 @@ a:active {
 
 .project-title {
   width: 80%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .project-description {
-  width: 60%;
+  width: 70%;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .project-details {
