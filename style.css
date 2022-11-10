@@ -197,7 +197,7 @@ a:active {
 
 .navigation-arrow:active,
 .navigation-arrow:hover {
-  color: hotpink;
+  color: var(--hover-color);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: transparent;
 }
@@ -522,7 +522,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 100vh;
+  min-height: 70vh;
   padding: 2rem 2rem;
   color: black;
 }
@@ -585,7 +585,7 @@ a:active {
 
 .footer-item-3 {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 3 / 4;
   text-align: center;
   align-self: end;
 }
@@ -788,7 +788,6 @@ a:active {
     padding: 4rem 4rem;
     grid-template-columns: 1fr 1fr 1fr;
     min-height: 70vh;
-    background: yellowgreen;
   }
 
   .about {
