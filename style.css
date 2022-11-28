@@ -52,7 +52,7 @@ html {
 */
 
 :root {
-  --primary-text-color: #222;
+  --primary-text-color: black;
   --accent-color: #555;
   --hyperlink-color: black;
   --hyperlink-alternate-color: rgb(255, 255, 255);
