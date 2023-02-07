@@ -55,7 +55,7 @@ html {
 :root {
   --primary-text-color: black;
   --accent-color: #555;
-  --hyperlink-color: #FE36EA;
+  --hyperlink-color: black;
   --hyperlink-alternate-color: rgb(255, 255, 255);
   --overlay-color: #FE36EA;
   --hover-color: #FE36EA;
