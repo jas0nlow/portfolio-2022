@@ -569,7 +569,8 @@ a:active {
 }
 
 .recognition-item {
-
+  text-decoration: underline;
+  line-height: 2;
 }
 
 .exhibitions-list {
@@ -577,8 +578,9 @@ a:active {
   line-height: 1.5;
 }
 
-.exhibitions-item {
-  
+.exhibition-item {
+  text-decoration: underline;
+  line-height: 2;
 }
 
 .about-image {
