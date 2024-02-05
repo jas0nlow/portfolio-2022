@@ -67,8 +67,8 @@ html {
   --base-color: #E4F57C;
   --color-1: #FF0B71;
   --color-2: #6197D7;
-  --color-3: #BDE9D6;
-  --color-4: #B1D61C;
+  --color-3: #92d0b6;
+  --color-4: #a8cc15;
   --color-5: #FE36EA;
   --color-6: #FFCD1E;
   --color-7: #4A28D2;
@@ -519,7 +519,16 @@ a:active {
 
 
 
-.global-footer,
+.global-footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
+  min-height: 70vh;
+  padding: 2rem 2rem;
+  color: black;
+  background-color: var(--base-color);
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr;
@@ -535,7 +544,7 @@ a:active {
 }
 
 .about-image {
-
+  
 }
 
 .about-item-2 {
@@ -544,7 +553,7 @@ a:active {
 }
 
 .about-description {
-
+  line-height: 1.5;
 }
 
 .about-gif {
@@ -556,6 +565,7 @@ a:active {
 
 .recognitions-list {
   padding-top: 8rem;
+  line-height: 1.5;
 }
 
 .recognition-item {
@@ -564,10 +574,11 @@ a:active {
 
 .exhibitions-list {
   padding-top: 8rem;
+  line-height: 1.5;
 }
 
 .exhibitions-item {
-
+  
 }
 
 .about-image {
