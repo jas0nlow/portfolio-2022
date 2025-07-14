@@ -459,8 +459,8 @@ a:active {
   align-items: center;
 }
 
-.menu-item {
-}
+/* .menu-item {
+} */
 
 .logo {
   display: flex;
@@ -492,8 +492,8 @@ a:active {
   text-align: center;
 }
 
-.hero-headline {
-}
+/* .hero-headline {
+} */
 
 .hero-icon {
   font-size: 4rem;
@@ -542,8 +542,8 @@ a:active {
   grid-row: 1 / 2;
 }
 
-.about-image {
-}
+/* .about-image {
+} */
 
 .about-item-2 {
   grid-column: 1 / 2;
@@ -751,14 +751,14 @@ a:active {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  body {
-  }
+  /* body {
+  } */
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  body {
-  }
+  /* body {
+  } */
 
   .project-name-preview {
     font-size: 1.8rem;
@@ -767,8 +767,8 @@ a:active {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {
-  }
+  /* body {
+  } */
 
   h1 {
     font-size: 4rem;
@@ -923,8 +923,8 @@ a:active {
   }
 
   /* Main Project Image Area on Large Devices */
-  .project-details {
-  }
+  /* .project-details {
+  } */
 
   .project-image {
     min-height: 100vh;
