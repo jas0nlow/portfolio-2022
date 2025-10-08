@@ -152,6 +152,7 @@ h2 {
 }
 
 h3 {
+  font-family: var(--heading-typeface);
   font-size: 1.325rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -159,10 +160,12 @@ h3 {
 }
 
 h4 {
+  font-family: var(--heading-typeface);
   font-weight: 600;
 }
 
 h5 {
+  font-family: var(--heading-typeface);
   font-weight: 700;
 }
 
