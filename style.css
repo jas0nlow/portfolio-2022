@@ -427,7 +427,12 @@ a:active {
 
 /* Holding Page Styles */
 
-.holding-page-text {text-align:center; padding: 10% 15% 0 15%;}
+.holding-page-text {
+  text-align:center; 
+  padding: 10% 15% 0 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 120%;
+}
 
 
 
@@ -628,6 +633,9 @@ a:active {
 
 .fa-brands, .fa-regular {font-size: 4rem;}
 
+.holding-links {
+  
+}
 
 
 /* Project Page
