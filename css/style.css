@@ -307,6 +307,7 @@ a:active {
 
 .intro-flex-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
   text-align: left;
@@ -334,6 +335,7 @@ a:active {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -346,6 +348,7 @@ a:active {
 /* Padding around work grid and project page */
 .portfolio,
 .project-wrapper {
+  margin-top: 1rem;
   padding: 0.25rem;
   text-align: center;
 }
@@ -369,7 +372,7 @@ a:active {
 }
 
 /* 1 column on mobile resolutions */
-.grid > * {
+.grid>* {
   flex: 1 100%;
 }
 
@@ -595,6 +598,7 @@ header {
   margin: 5px auto;
   width: 10rem;
   border-radius: 30px;
+  font-weight: 600;
 }
 
 .nav-container .contact-btn {
@@ -894,8 +898,12 @@ header {
     font-size: 1.5rem;
   }
 
+  .intro-flex-container {
+    flex-direction: row;
+  }
+
   /* 3 columns on tablet & desktop resolutions */
-  .grid > * {
+  .grid>* {
     flex: 1 30%;
   }
 }
