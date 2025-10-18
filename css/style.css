@@ -321,10 +321,6 @@ a:active {
   border-radius: 50px;
 }
 
-.intro .contact-btn {
-  padding: 0.5rem 1rem;
-}
-
 #svg-star-blue {
   position: relative;
   top: 0.75rem;
@@ -576,7 +572,7 @@ header {
   font-size: 1rem;
 }
 
-.nav-container nav {
+#nav-links {
   display: none;
   margin-top: 1rem;
   width: 100vw;
@@ -585,20 +581,34 @@ header {
   padding: 1rem 0;
 }
 
-.nav-container nav a {
+.nav-item {
   color: var(--alt-background-color);
   display: block;
   text-align: center;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .contact-btn {
   background-color: var(--btn-color);
   color: var(--alt-background-color);
-  margin: 5px auto;
-  width: 10rem;
+  padding: 0.5rem;
+  margin: auto;
+  width: 9rem;
   border-radius: 30px;
+  font-size: 1.1rem;
   font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.5s;
+}
+
+.contact-btn:hover .expandable {
+  width: 0.5rem;
+}
+
+.contact-btn:hover {
+  /* this width = contact-btn width + expandable on-hover width */
+  width: 9.5rem;
 }
 
 .nav-container .contact-btn {
@@ -951,7 +961,7 @@ header {
     font-size: 1.25rem;
   }
 
-  .nav-container nav {
+  #nav-links {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -962,17 +972,16 @@ header {
     background-color: var(--background-color);
   }
 
-  .nav-container nav a {
+  .nav-item {
     color: #000;
-    padding: 0.5rem;
-    margin: 0.5rem;
+    /* padding: 0.5rem;
+    margin: 0.5rem; */
   }
 
   .contact-btn {
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 30px;
-    font-size: 1.2rem;
+    /* padding: 0.5rem; */
+    margin: 0.5rem auto;
+    font-size: 1.1rem;
     font-weight: 600;
   }
 
