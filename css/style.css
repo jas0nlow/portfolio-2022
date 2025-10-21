@@ -285,21 +285,22 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
 .intro-flex-container div {
   flex: 1;
   background-color: var(--background-color);
-  margin: 1rem;
+  margin: 0 1rem;
   padding: 2rem;
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 #intro-star {
   position: relative;
-  top: 0.75rem;
+  top: 1.5rem;
+  width: 3.5rem;
 }
 
 /* Define the rotation animation */
@@ -313,7 +314,8 @@ a {
   }
 }
 
-.intro-box-1:active #intro-star, .intro-box-1:hover #intro-star {
+.intro-box-1:active #intro-star,
+.intro-box-1:hover #intro-star {
   animation: rotating 3s linear infinite;
 }
 
@@ -330,7 +332,7 @@ a {
   display: flex;
   gap: 4rem 1rem;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin: 2rem auto;
 }
@@ -536,6 +538,7 @@ header {
   width: 0;
   z-index: -1;
   transition: all 0.5s;
+  overflow: visible;
 }
 
 .logo:active #logo-star {
@@ -546,7 +549,7 @@ header {
 }
 
 .logo-name {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .nav-links {
@@ -685,6 +688,14 @@ header {
   gap: 1rem;
   border-radius: 30px;
   margin: 0.5rem 0.5rem 2rem 0.5rem;
+}
+
+.footer-bar-2 .logo-link {
+  width: 5rem;
+}
+
+.footer-bar-2 .logo-name {
+  font-size: 1.3rem;
 }
 
 .socials-list {
@@ -852,12 +863,28 @@ header {
   /* body {
   } */
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   .project-name-preview {
     font-size: 1.5rem;
   }
 
+  .intro {
+    padding-top: 3rem;
+  }
+
   .intro-flex-container {
     flex-direction: row;
+  }
+
+  #intro-star {
+    width: 4rem;
+  }
+
+  .intro-flex-container div {
+    border-radius: 50px;
   }
 
   .nav-item:active {
@@ -867,6 +894,7 @@ header {
   /* 3 columns on tablet & desktop resolutions */
   .grid>* {
     flex: 1 30%;
+    max-width: 30%;
   }
 
   .footer-bar-1 {
@@ -911,15 +939,15 @@ header {
   } */
 
   h1 {
-    font-size: 2.45rem;
+    font-size: 3.5rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 2.75rem;
   }
 
   h3 {
-    font-size: 1.55rem;
+    font-size: 2.5rem;
   }
 
   span b {
@@ -937,7 +965,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 15rem;
+    width: 16rem;
     padding-left: 2rem;
   }
 
@@ -947,8 +975,8 @@ header {
 
   .logo:hover #logo-star,
   .logo:active #logo-star {
-    top: -1.5rem;
-    left: 0.6rem;
+    top: -1.25rem;
+    left: 0.75rem;
     height: 8rem;
     width: 8rem;
   }
@@ -972,7 +1000,7 @@ header {
   .nav-item {
     color: #000;
     text-transform: capitalize;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 
@@ -988,12 +1016,12 @@ header {
   .nav-container .contact-btn {
     background-color: var(--base-color);
     color: black;
-    width: 11rem;
-    font-size: 1.2rem;
+    width: 13rem;
+    font-size: 1.5rem;
   }
 
   .nav-container .contact-btn .right-arrow {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .contact-btn:hover {
@@ -1010,6 +1038,20 @@ header {
 
   #hmbgr-menu {
     display: none;
+  }
+
+  .intro {
+    padding-top: 5rem;
+  }
+
+  #intro-star {
+    width: 5rem;
+    top: 1.25rem;
+  }
+
+  .intro-flex-container div {
+    padding: 4rem 5rem 5rem 5rem;
+    border-radius: 100px;
   }
 
   .work-page-grid-item {
