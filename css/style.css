@@ -988,11 +988,10 @@ header {
   .nav-links {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 5rem;
     width: 25rem;
-    padding: 2rem;
-    font-size: 1rem;
+    margin: auto 3rem;
     font-weight: 600;
     background-color: var(--background-color);
   }
@@ -1029,7 +1028,7 @@ header {
   }
 
   .nav-container .contact-btn:hover {
-    width: 12rem;
+    width: 14rem;
   }
 
   .view-work-btn:hover {
