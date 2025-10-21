@@ -275,7 +275,10 @@ a {
 .intro {
   background-color: var(--alt-background-color);
   padding-bottom: 5rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .intro-flex-container {
@@ -294,7 +297,7 @@ a {
   border-radius: 50px;
 }
 
-#svg-star-blue {
+#intro-star {
   position: relative;
   top: 0.75rem;
 }
@@ -310,7 +313,7 @@ a {
   }
 }
 
-.intro-box-1:hover #svg-star-blue {
+.intro-box-1:active #intro-star, .intro-box-1:hover #intro-star {
   animation: rotating 3s linear infinite;
 }
 
@@ -506,7 +509,6 @@ header {
   top: 0px;
   background-color: var(--background-color);
   z-index: 1;
-  border-bottom: 1px solid #000;
   padding-bottom: 1rem;
 }
 
@@ -526,30 +528,60 @@ header {
   width: 4rem;
 }
 
+#logo-star {
+  position: absolute;
+  top: 2.5rem;
+  left: 5rem;
+  height: 0;
+  width: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.logo:active #logo-star {
+  top: -0.5rem;
+  left: 0;
+  height: 6rem;
+  width: 6rem;
+}
+
 .logo-name {
   font-size: 1rem;
 }
 
-#nav-links {
-  display: none;
+.nav-links {
   width: 100vw;
-  height: 100vh;
   background-color: var(--alt-background-color);
-  padding-top: 1rem;
+  overflow: hidden;
+  transition: height 1s;
+}
+
+.menu-open {
+  height: 100vh;
+}
+
+.menu-closed {
+  height: 0;
 }
 
 .nav-item {
   color: black;
   display: block;
   text-align: center;
-  margin: 2rem auto;
   text-transform: uppercase;
   font-size: 2.5rem;
   font-weight: 500;
+  padding: 2rem;
+  background-image: url("/assets/svg/star-5.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0%;
+  transition: background-size 0.5s;
 }
 
 .nav-item:active {
   text-decoration: underline;
+  background-size: 40%;
 }
 
 .contact-btn {
@@ -828,6 +860,10 @@ header {
     flex-direction: row;
   }
 
+  .nav-item:active {
+    background-size: 25%;
+  }
+
   /* 3 columns on tablet & desktop resolutions */
   .grid>* {
     flex: 1 30%;
@@ -862,7 +898,7 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   .fa-brands,
   .fa-regular {
     font-size: 2rem;
@@ -909,15 +945,23 @@ header {
     width: 5rem;
   }
 
+  .logo:hover #logo-star,
+  .logo:active #logo-star {
+    top: -1.5rem;
+    left: 0.6rem;
+    height: 8rem;
+    width: 8rem;
+  }
+
   .logo-name {
     font-size: 1.25rem;
   }
 
-  #nav-links {
+  .nav-links {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 3rem;
+    height: 5rem;
     width: 25rem;
     padding: 2rem;
     font-size: 1rem;
@@ -934,9 +978,12 @@ header {
 
   .nav-item:hover {
     text-decoration: underline;
+    background-size: 75%;
   }
 
-  .contact-btn {}
+  .nav-item:active {
+    background-size: 75%;
+  }
 
   .nav-container .contact-btn {
     background-color: var(--base-color);
