@@ -127,10 +127,10 @@ svg {
 */
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: var(--heading-typeface);
   font-weight: 400;
-  line-height: 130%;
+  line-height: 110%;
 }
 
 h2 {
@@ -604,61 +604,34 @@ header {
   background-color: var(--base-color);
 }
 
-.about {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-  min-height: 70vh;
-  padding: 2rem 2rem;
-  color: black;
+.about-bio-section {
+  display: flex;
+  flex-direction: column;
+  background-color:var(--alt-background-color);
+  padding: 45px;
+  margin: 30px;
+  border-radius: 30px;
+  gap: 30px;
 }
 
-.about-item-1 {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+.about-experience-section {
+  display: flex;
+  flex-direction: row;
 }
 
-/* .about-image {
-} */
-
-.about-item-2 {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.about-description {
-  line-height: 1.5;
-}
-
-.about-gif {
-  display: grid;
-  place-items: center;
-  margin: auto;
-  width: 30%;
-}
-
-.recognitions-list {
-  padding-top: 8rem;
-  line-height: 1.5;
-}
-
-.recognition-item {
-  text-decoration: underline;
-  line-height: 2;
-}
-
-.exhibitions-list {
-  padding-top: 8rem;
-  line-height: 1.5;
-}
-
-.exhibition-item {
-  text-decoration: underline;
-  line-height: 2;
+.about-experience-card{
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  background-color:var(--alt-background-color);
+  padding: 45px;
+  margin: 30px;
+  border-radius: 30px;  
+  gap: 15px;
 }
 
 .about-image {
-  width: 100%;
+  max-width: 200px;
 }
 
 .footer-item-1 {
