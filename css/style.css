@@ -82,6 +82,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 300px;
 }
 
 ::selection {
@@ -1175,7 +1176,7 @@ header {
   }
 
   .about-main {
-    width: 75vw;
+    width: 90vw;
     max-width: 1200px;
     margin: auto;
   }
