@@ -951,7 +951,7 @@ header {
     font-weight: 600;
   }
 
-  .footer-bar-1 .contact-btn:active {
+  .footer-bar-1 .contact-btn:active, .footer-bar-1 .contact-btn:hover {
     width: 13rem;
   }
 
@@ -994,6 +994,12 @@ header {
 @media (min-width: 992px) {
   /* body {
   } */
+
+  .work-wrapper {
+    width: 100vw;
+    max-width: 2000px;
+    margin: auto;
+  }
 
   h1 {
     font-size: 3.5rem;
