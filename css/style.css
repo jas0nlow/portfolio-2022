@@ -1148,6 +1148,10 @@ header {
     padding: 3rem 2rem;
   }
 
+  .footer-bar-2 .logo {
+    width: 13rem;
+  }
+
   .socials-list {
     gap: 1rem;
   }
