@@ -397,17 +397,18 @@ a {
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  width: 10rem;
+  width: 10.5rem;
   background-color: var(--btn-color);
   color: var(--alt-background-color);
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   border-radius: 2rem;
   font-size: 1.2rem;
   font-weight: 700;
   transition: width 0.5s;
 }
 
-.view-work-btn:active {
+.view-work-btn:active,
+.view-work-btn:hover {
   width: 11rem;
 }
 
@@ -581,9 +582,9 @@ header {
   color: var(--alt-background-color);
   padding: 0.5rem 1rem;
   margin: auto;
-  width: 11rem;
+  width: 13rem;
   border-radius: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -591,28 +592,28 @@ header {
   transition: width 0.5s;
 }
 
-.contact-btn:active {
-  width: 12rem;
+.contact-btn:active,
+.contact-btn:hover {
+  width: 13.5rem;
 }
 
 .nav-container .contact-btn {
   background-color: var(--btn-color);
   color: var(--alt-background-color);
-  width: 13rem;
-  font-size: 1.5rem;
+  width: 14rem;
   transition: width 0.5s;
 }
 
 .nav-container .contact-btn:active {
-  width: 14rem;
+  width: 14.5rem;
 }
 
 .right-arrow {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .nav-container .contact-btn .right-arrow {
-  font-size: 2.25rem;
+  font-size: 2.75rem;
 }
 
 #hmbgr-menu {
@@ -652,6 +653,7 @@ header {
 .footer-bar-1 .contact-btn {
   padding: 0.5rem;
   width: 50vw;
+  min-width: 13rem;
   font-size: 1.5rem;
   border-radius: 3rem;
   justify-content: space-around;
@@ -659,10 +661,11 @@ header {
 
 .footer-bar-1 .contact-btn:active {
   width: 60vw;
+  min-width: 13.5rem;
 }
 
 .footer-bar-1 .contact-btn .right-arrow {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
 }
 
 .footer-bar-2 {
@@ -737,15 +740,19 @@ header {
   justify-content: space-between;
 }
 
+/* .project-aside {} */
+
 .project-navigation {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: flex-end;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex: 1; */
+  /* align-items: flex-end; */
 }
 
-.arrow {
-  padding-right: 1rem;
+/* .arrow {} */
+
+.chevron {
+  font-size: 3rem;
 }
 
 .project-image {
@@ -959,18 +966,17 @@ header {
   }
 
   .footer-bar-1 .contact-btn {
-    padding: 0.5rem;
-    width: 11rem;
-    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    width: 13rem;
   }
 
   .footer-bar-1 .contact-btn:active,
   .footer-bar-1 .contact-btn:hover {
-    width: 12rem;
+    width: 13.5rem;
   }
 
   .footer-bar-1 .contact-btn .right-arrow {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
 
   .footer-bar-1,
@@ -1094,19 +1100,11 @@ header {
   }
 
   .nav-container .contact-btn .right-arrow {
-    font-size: 2rem;
-  }
-
-  .contact-btn:hover {
-    width: 12rem;
+    font-size: 2.5rem;
   }
 
   .nav-container .contact-btn:hover {
-    width: 14rem;
-  }
-
-  .view-work-btn:hover {
-    width: 11rem;
+    width: 13.5rem;
   }
 
   #hmbgr-menu {
@@ -1163,26 +1161,29 @@ header {
   }
 
   .project-aside {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
     margin-bottom: 5rem;
   }
 
-  .project-info {
-    width: 80%;
+  .project-navigation {
+    position: absolute;
+    top: 11rem;
+    right: 2rem;
+  }
+
+  .chevron {
+    font-size: 5rem;
   }
 
   .project-title {
     width: 80%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: auto 0;
+    margin: auto;
   }
 
   .project-description {
     width: 70%;
-    padding-left: 0;
-    padding-right: 0;
+    padding: auto 0;
+    margin: 1rem auto;
   }
 
   .project-details {
