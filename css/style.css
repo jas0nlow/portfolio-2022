@@ -201,6 +201,14 @@ a {
   background-position: center center;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
 /* Color Styles */
 
 .color-1 {
@@ -381,7 +389,7 @@ a {
 
 .project-name-preview {
   text-align: center;
-  margin: 0.5rem auto 1.5rem auto;
+  margin: 1rem auto;
 }
 
 .view-work-btn {
@@ -395,7 +403,7 @@ a {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   transition: width 0.5s;
 }
 
@@ -576,7 +584,7 @@ header {
   width: 11rem;
   border-radius: 2rem;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -600,11 +608,11 @@ header {
 }
 
 .right-arrow {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .nav-container .contact-btn .right-arrow {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 #hmbgr-menu {
@@ -642,20 +650,19 @@ header {
 }
 
 .footer-bar-1 .contact-btn {
-  padding: 1rem;
-  width: 60vw;
+  padding: 0.5rem;
+  width: 50vw;
   font-size: 1.5rem;
-  font-weight: 500;
   border-radius: 3rem;
   justify-content: space-around;
 }
 
 .footer-bar-1 .contact-btn:active {
-  width: 70vw;
+  width: 60vw;
 }
 
 .footer-bar-1 .contact-btn .right-arrow {
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 
 .footer-bar-2 {
@@ -689,8 +696,17 @@ header {
   width: 3rem;
 }
 
-.fa-instagram, .fa-linkedin-in, .fa-envelope {
-  font-size: 2rem;
+.svg-social {
+  width: 2rem;
+}
+
+.svg-mail {
+  width: 2.5rem;
+}
+
+.svg-linkedin {
+  position: relative;
+  top: -0.1rem;
 }
 
 .copyright {
@@ -820,11 +836,9 @@ header {
   top: 0.35rem;
 }
 
-.fa-circle-user,
-.fa-calendar,
-.fa-award {
-  color: var(--hover-color);
-  font-size: 1.5rem;
+.exp-icon {
+  position: relative;
+  top: -0.2rem;
   width: 1.5rem;
 }
 
@@ -945,21 +959,22 @@ header {
   }
 
   .footer-bar-1 .contact-btn {
-    padding: 1rem;
-    width: 12rem;
+    padding: 0.5rem;
+    width: 11rem;
     font-size: 1.2rem;
-    font-weight: 600;
   }
 
-  .footer-bar-1 .contact-btn:active, .footer-bar-1 .contact-btn:hover {
-    width: 13rem;
+  .footer-bar-1 .contact-btn:active,
+  .footer-bar-1 .contact-btn:hover {
+    width: 12rem;
   }
 
   .footer-bar-1 .contact-btn .right-arrow {
     font-size: 1.75rem;
   }
 
-  .footer-bar-1, .footer-bar-2 {
+  .footer-bar-1,
+  .footer-bar-2 {
     flex-direction: row;
     margin: 0.5rem 3rem 2rem 3rem;
     padding: 3rem 2rem;
@@ -972,10 +987,6 @@ header {
 
   .footer-bar-2 .logo {
     padding: 0;
-  }
-
-  .fa-instagram, .fa-linkedin-in, .fa-envelope {
-    font-size: 2rem;
   }
 
   .about-experience-section {
@@ -1124,23 +1135,21 @@ header {
     font-size: 2rem;
   }
 
-  header, footer {
+  header,
+  footer {
     width: 100vw;
     max-width: 2000px;
     margin: auto;
   }
 
-  .footer-bar-1, .footer-bar-2 {
+  .footer-bar-1,
+  .footer-bar-2 {
     margin: 0.5rem 3rem 2rem 3rem;
     padding: 3rem 2rem;
   }
 
   .socials-list {
-    gap: 2rem;
-  }
-
-  .fa-instagram, .fa-linkedin-in, .fa-envelope {
-    font-size: 3rem;
+    gap: 1rem;
   }
 
   /* Padding around work grid and project page */

@@ -3,9 +3,9 @@ function toggleMenu() {
   let hmbgrIcon = document.getElementById("hmbgr-menu");
   if (navLinks.className === "nav-links menu-open") {
     navLinks.className = "nav-links menu-closed";
-    hmbgrIcon.innerHTML = '<i class="fa fa-bars"></i>';
+    hmbgrIcon.innerHTML = '<img class="svg-menu" src="/assets/svg/menu_24dp.svg"/>';
   } else {
     navLinks.className = "nav-links menu-open";
-    hmbgrIcon.innerHTML = '<i class="fa fa-close"></i>';
+    hmbgrIcon.innerHTML = '<img class="svg-menu" src="/assets/svg/close_24dp.svg"/>';
   }
 } 
