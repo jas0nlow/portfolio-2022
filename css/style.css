@@ -423,6 +423,8 @@ a {
   background-size: cover;
 }
 
+/* WORK CARD HOVER STATES - FROM FIRST VERSION OF SITE
+
 .overlay-wrapper-1 {
   background: url(../assets/thumbnails/schollar-thumbnail.jpg);
   background-repeat: no-repeat;
@@ -470,6 +472,7 @@ a {
   background-size: contain;
   clip-path: url(#roundedsquare);
 }
+*/
 
 /* Holding Page Styles */
 
@@ -734,6 +737,17 @@ header {
 
 */
 
+.project-main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--alt-background-color);
+  padding: .3 rem;
+  margin: 1rem 1rem;
+  border-radius: 1rem;
+  gap: 2rem;
+}
+
+
 .project-wrapper {
   display: flex;
   flex-direction: column;
@@ -756,8 +770,6 @@ header {
 }
 
 .project-image {
-  font-size: 12rem;
-  min-height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -772,8 +784,9 @@ header {
 
 .project-title {
   width: 100%;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .project-description {
@@ -793,7 +806,14 @@ header {
 }
 
 /*
-=== ABOUT page ===
+
+ █████  ██████   ██████  ██    ██ ████████     ██████   █████   ██████  ███████ 
+██   ██ ██   ██ ██    ██ ██    ██    ██        ██   ██ ██   ██ ██       ██      
+███████ ██████  ██    ██ ██    ██    ██        ██████  ███████ ██   ███ █████   
+██   ██ ██   ██ ██    ██ ██    ██    ██        ██      ██   ██ ██    ██ ██      
+██   ██ ██████   ██████   ██████     ██        ██      ██   ██  ██████  ███████ 
+
+
 */
 
 .about-bio-section {
@@ -1160,6 +1180,13 @@ header {
     padding: 2rem;
   }
 
+  .project-main {
+      padding: 3rem;
+      margin: 1rem 2rem;
+      border-radius: 2rem;
+      gap: 2rem;
+  }
+
   .project-aside {
     margin-bottom: 5rem;
   }
@@ -1175,9 +1202,10 @@ header {
   }
 
   .project-title {
-    width: 80%;
-    padding: auto 0;
-    margin: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .project-description {
@@ -1191,8 +1219,7 @@ header {
   }
 
   .project-image {
-    min-height: 100vh;
-    padding: 0.5rem;
+    max-height: 636px;
   }
 
   .about-main {
