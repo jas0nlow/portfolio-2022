@@ -737,12 +737,13 @@ header {
 
 */
 
-.project-main {
+.project-intro {
   display: flex;
   flex-direction: column;
   background-color: var(--alt-background-color);
-  padding: .3 rem;
-  margin: 1rem 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 1rem;
   gap: 2rem;
 }
@@ -751,7 +752,10 @@ header {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /* .project-aside {} */
@@ -770,10 +774,7 @@ header {
 }
 
 .project-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
+
 }
 
 /* Main Project Image Area */
@@ -803,6 +804,21 @@ header {
 
 .project-details {
   width: 100%;
+}
+
+.chips-container {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;  
+  gap: 1rem;
+}
+
+.chip {
+  outline-color: var(--btn-color);
+  outline-width: 1px;
+  outline-style: solid;
+  border-radius: 50px;
+  padding: 1rem;
 }
 
 /*
@@ -1187,6 +1203,11 @@ header {
       gap: 2rem;
   }
 
+  .project-intro {
+    text-align: left;
+    padding: 3rem;
+  }
+
   .project-aside {
     margin-bottom: 5rem;
   }
@@ -1204,9 +1225,11 @@ header {
   .project-title {
     width: 100%;
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
+
+  /* unused?
 
   .project-description {
     width: 70%;
@@ -1217,6 +1240,8 @@ header {
   .project-details {
     width: 100%;
   }
+
+  */
 
   .project-image {
     max-height: 636px;
