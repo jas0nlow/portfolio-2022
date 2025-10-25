@@ -520,6 +520,7 @@ header {
 }
 
 #logo-star {
+  display: none;
   position: absolute;
   top: 2.5rem;
   left: 5rem;
@@ -531,12 +532,12 @@ header {
   overflow: visible;
 }
 
-.logo:active #logo-star {
+/* .logo:active #logo-star {
   top: -0.5rem;
   left: 0;
   height: 6rem;
   width: 6rem;
-}
+} */
 
 .logo-name {
   font-size: 1.1rem;
@@ -746,12 +747,12 @@ header {
 
 /* .project-aside {} */
 
-.project-navigation {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* flex: 1; */
-  /* align-items: flex-end; */
-}
+/* .project-navigation {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: flex-end;
+} */
 
 /* .arrow {} */
 
@@ -954,7 +955,7 @@ header {
   .nav-item:active {
     background-size: 25%;
   }
-
+ 
   /* 3 columns on tablet & desktop resolutions */
   .grid>* {
     flex: 1 30%;
@@ -1057,8 +1058,11 @@ header {
     width: 5rem;
   }
 
-  .logo:hover #logo-star,
-  .logo:active #logo-star {
+  #logo-star {
+    display: inline;
+  }
+
+  .logo:hover #logo-star {
     top: -1.25rem;
     left: 0.75rem;
     height: 8rem;
