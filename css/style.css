@@ -103,19 +103,6 @@ svg {
   max-width: 100%;
 }
 
-@keyframes dance {
-  0% {
-    transform: rotate(3deg);
-  }
-
-  50% {
-    transform: rotate(-3deg);
-  }
-
-  100% {
-    transform: rotate(3deg);
-  }
-}
 
 /* Global & Mobile Typography
 
@@ -192,6 +179,7 @@ a {
 .custom-navigation {
   color: black;
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .custom-navigation:hover {
@@ -292,20 +280,29 @@ a {
   width: 3.5rem;
 }
 
-/* Define the rotation animation */
-@keyframes rotating {
+/* Define the spin animation */
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 .intro-box-1:active #intro-star,
 .intro-box-1:hover #intro-star {
-  animation: rotating 3s linear infinite;
+  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
 }
 
 /* Padding around work grid and project page */
@@ -343,6 +340,7 @@ a {
   height: 100%;
   opacity: 0;
   transition: 0.75s ease;
+  -webkit-transition: 0.75s ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,6 +403,7 @@ a {
   font-size: 1.2rem;
   font-weight: 700;
   transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 
 .view-work-btn:active,
@@ -528,6 +527,7 @@ header {
   width: 0;
   z-index: -1;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   overflow: visible;
 }
 
@@ -547,6 +547,7 @@ header {
   background-color: var(--alt-background-color);
   overflow: hidden;
   transition: height 1s;
+  -webkit-transition: height 1s;
 }
 
 .menu-open {
@@ -570,6 +571,7 @@ header {
   background-position: center;
   background-size: 0%;
   transition: background-size 0.5s;
+  -webkit-transition: background-size 0.5s;
 }
 
 .nav-item:active {
@@ -590,6 +592,7 @@ header {
   align-items: center;
   justify-content: space-between;
   transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 
 .contact-btn:active,
@@ -602,6 +605,7 @@ header {
   color: var(--alt-background-color);
   width: 14rem;
   transition: width 0.5s;
+  -webkit-transition: width 0.5s;
 }
 
 .nav-container .contact-btn:active {
