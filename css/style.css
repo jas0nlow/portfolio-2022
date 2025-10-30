@@ -423,7 +423,6 @@ a {
   background-size: cover;
 }
 
-/* WORK CARD HOVER STATES - FROM FIRST VERSION OF SITE
 
 .overlay-wrapper-1 {
   background: url(../assets/thumbnails/schollar-thumbnail.jpg);
@@ -472,7 +471,7 @@ a {
   background-size: contain;
   clip-path: url(#roundedsquare);
 }
-*/
+
 
 /* Holding Page Styles */
 
